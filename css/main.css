@@ -1,0 +1,39 @@
+/* ------------Page 1 css--------------- */
+/* a container holding the page elements so they are centered , have a column direction, and*/
+#container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*code to style home page title*/
+h1 {
+  font-size: 75px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#button {
+}
+
+/* ------------Round1 css--------------- */
+
+/* ----title---*/
+
+/* ----gameboard---*/
+#container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* ------------Round2 css--------------- */
+
+/* ----title---*/
+
+/* ------------Final-jeopardy css--------------- */
+
+/* ----title---*/
