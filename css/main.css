@@ -1,27 +1,50 @@
-/* ------------Page 1 css--------------- */
+/* -----------------------------Home Page css--------------------------------- */
+
+/*the body is given a margin of zero to eliminate any margins, and a black background color so entire page appears black*/
+body {
+  margin: 0;
+  background-color: black;
+}
+
 /* a container holding the page elements so they are centered , have a column direction, and*/
+/*PROBLEM: when tested on mobile the text Welcome to Jeopardy is not centering*/
 #container1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 /*code to style home page title*/
 h1 {
-  font-size: 75px;
+  font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(63, 36, 184);
 }
 
+/*specifies width of home page image, no height specified so it constrains proportions*/
+#homeimg {
+  width: 400px;
+  margin: 70px;
+}
+
+/*--------Button styling css--------*/
+/*PROBLEM: button does not show this background color with no click/hover, but gray. Hover is working.*/
 #button {
+  padding: 5px;
+  border-radius: 10px; /*rounds button edges*/
+  background-color: rgb(137, 36, 184);
 }
 
-/* ------------Round1 css--------------- */
+button:hover {
+  background-color: rgb(110, 60, 110);
+}
+
+/* ------------------------------------------Round1 css---------------------------------------------- */
 
 /* ----title---*/
 
-/* ----gameboard---*/
+/* ---Game board layout---*/
 #container2 {
   display: flex;
   flex-direction: column;
@@ -30,10 +53,14 @@ h1 {
   width: 100%;
 }
 
-/* ------------Round2 css--------------- */
+/*--------Button styling css--------*/
+
+/*This page's html will reference the same button css styling created in the home page css section listed above*/
+
+/* --------------------------------------------Round2 css---------------------------------------------------- */
 
 /* ----title---*/
 
-/* ------------Final-jeopardy css--------------- */
+/* -----------------------------------------Final-jeopardy css---------------------------------------------- */
 
 /* ----title---*/
