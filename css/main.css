@@ -1,66 +1,136 @@
-/* -----------------------------Home Page css--------------------------------- */
+/* ------------------Home Page css---------------------- */
 
 /*the body is given a margin of zero to eliminate any margins, and a black background color so entire page appears black*/
 body {
-  margin: 0;
+  display: flex;
+  border: 10px rgb(166, 137, 180) solid;
+  border-radius: 6px;
+  max-width: 1000px;
+  padding: 10px;
   background-color: black;
 }
 
 /* a container holding the page elements so they are centered , have a column direction, and*/
-/*PROBLEM: when tested on mobile the text Welcome to Jeopardy is not centering*/
+/* PROBLEM: NEED TO CLARIFY EXPLANATION FOR FLEX */
 #container1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1; /* how much space it is taking up within the flex container*/
+  margin: 0;
+  max-width: 1000px;
+  background-color: navy;
+  padding: 5vh;
 }
 
-/*code to style home page title*/
 h1 {
-  font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgb(63, 36, 184);
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(212, 42, 228);
+  padding-bottom: 20px;
 }
 
 /*specifies width of home page image, no height specified so it constrains proportions*/
 #homeimg {
-  width: 400px;
-  margin: 70px;
+  max-width: 400px;
+  margin-bottom: 70px;
 }
 
 /*--------Button styling css--------*/
-/*PROBLEM: button does not show this background color with no click/hover, but gray. Hover is working.*/
+
+/* PROBLEM: BUTTON TEXT SHOULD BE BLACK AND BUTTON NEEDS SPACING ABOVE IT. HOVER PSEUDO NOT WORKING*/
 #button {
-  padding: 5px;
+  padding: 4px;
   border-radius: 10px; /*rounds button edges*/
   background-color: rgb(137, 36, 184);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
 
 button:hover {
   background-color: rgb(110, 60, 110);
 }
 
-/* ------------------------------------------Round1 css---------------------------------------------- */
+/*-----may need this for media screen specific design later
+@media screen and (max-width < 500px){
+}----*/
 
-/* ----title---*/
+/* ---------------------------Round1 css------------------------------- */
 
 /* ---Game board layout---*/
-#container2 {
+/*PROBLEM: GAME BOARD NOT RESPONSIVE TO SHRINKING BROWSER, WANT TO DEFINE THE 'BOXES' WITH A SHADOW, */
+#board {
   display: flex;
-  flex-direction: column;
+  flex-flow: row-wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 10px;
+  max-width: 1000px;
+  max-height: 600px;
+  background-color: rgb(223, 20, 230);
+  padding-bottom: 20px;
+  border: white 5px solid;
+  border-radius: 1em;
 }
 
-/*--------Button styling css--------*/
+/* PROBLEM: NEED TO FIX TITLES IN LAYOUT--IDEALLY THEY WOULD BE SEPARATE! */
+.gametitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: bold;
+  width: 20vh;
+  height: auto;
+  color: white;
+}
 
-/*This page's html will reference the same button css styling created in the home page css section listed above*/
+h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20vh;
+  height: auto;
+  color: white;
+}
+#rows h3 {
+  /*this pseudoclass takes the h3 elements inside the #board id and puts a gold border around them */
+  border: gold solid 2px;
+  padding: 80px;
+}
 
-/* --------------------------------------------Round2 css---------------------------------------------------- */
+/* ----------------Round2 css--------------------- */
 
-/* ----title---*/
+/* -------------------Final-jeopardy css------------------- */
+#finalcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 50px;
+}
 
-/* -----------------------------------------Final-jeopardy css---------------------------------------------- */
+/* PROBLEM: IDS CONNECTED TO THIS ARE NOT WORKING SO FONTS ARE NOT CHANGING */
+#finaljtitle {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 80 px;
+  font-weight: bold;
+  width: 20vh;
+  color: white;
+}
 
-/* ----title---*/
+#finaljq {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 55 px;
+  font-weight: bold;
+  width: 20vh;
+  color: white;
+}

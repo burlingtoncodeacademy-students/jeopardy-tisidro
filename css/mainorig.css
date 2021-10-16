@@ -1,0 +1,102 @@
+/* -----------------------------Home Page css--------------------------------- */
+
+/*the body is given a margin of zero to eliminate any margins, and a black background color so entire page appears black*/
+body {
+  display: flex;
+}
+
+/* a container holding the page elements so they are centered , have a column direction, and*/
+/*PROBLEM: when tested on mobile the text Welcome to Jeopardy is not centering. Although it's display flex and has centering for rows and columns, it is not centering on the body*/
+#container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* how much space it is taking up within the flex container*/
+  margin: 0;
+  border: 10px white solid;
+}
+
+/*code to style home page title*/
+/* creates a container to allow for title and subtitle */
+#title-container {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: '. title .';
+  background-color: black;
+}
+
+/* pseudoclass that works on h1 found in title container to center it */
+#title h1 {
+  grid-area: title;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(63, 36, 184);
+}
+
+/*specifies width of home page image, no height specified so it constrains proportions*/
+#homeimg {
+  max-width: 400px;
+  margin-bottom: 70px;
+}
+
+/*--------Button styling css--------*/
+#button {
+  padding: 5px;
+  border-radius: 10px; /*rounds button edges*/
+  background-color: rgb(137, 36, 184);
+}
+
+button:hover {
+  background-color: rgb(110, 60, 110);
+}
+
+/*-----may need this for media screen specific design later
+  @media screen and (max-width < 500px){
+  }----*/
+
+/* ------------------------------------------Round1 css---------------------------------------------- */
+
+/* ----title---*/
+
+/* ---Game board layout---*/
+
+#board {
+  display: grid;
+  grid-template-rows: 1 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  width: 90vw;
+  gap: 5px;
+  justify-items: center;
+  background-color: gray;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+#board h3 {
+  /*this pseudoclass takes the h3 elements inside the #board id and puts a gold border around them */
+  border: gold solid 2px;
+  padding: 80px;
+}
+
+.gametitle {
+  /* make this class align as a row */
+}
+
+/*--------Button styling css--------*/
+
+/*This page's html will reference the same button css styling created in the home page css section listed above*/
+
+/* --------------------------------------------Round2 css---------------------------------------------------- */
+
+/* ----title---*/
+
+/* -----------------------------------------Final-jeopardy css---------------------------------------------- */
+
+/* ----title---*/
