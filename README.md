@@ -1,6 +1,8 @@
+/_-----------NOTE from Terri: I created a grid version named indexgrid.html to practice my css grid skills. The index.html is made with flexbox. I plan to make pages for 1,2, and final jeopardy in grid as well to keep developing my skills so I know both! :) ---------_/
+
 # Jeopardy Board
 
-Jeopardy! The great American quiz show has been a staple of network television since the 60s.  In this project we will be creating our own Jeopardy board which we will build the functionality for in later weeks. For now we're going to focus on site design and navigation.
+Jeopardy! The great American quiz show has been a staple of network television since the 60s. In this project we will be creating our own Jeopardy board which we will build the functionality for in later weeks. For now we're going to focus on site design and navigation.
 
 This site will consist of 4 pages; a landing page, round 1 page, double jeopardy, and final jeopardy.
 
@@ -97,20 +99,21 @@ This site will consist of 4 pages; a landing page, round 1 page, double jeopardy
 **And** a single section with a topic in it
 
 **And** two forms
-  * one with a field for the amount you want to bet.
-  * one for the final answer, the button for which should be disabled
+
+- one with a field for the amount you want to bet.
+- one for the final answer, the button for which should be disabled
 
 # Icebox
 
-* When you first visit the homepage, it should play the Jeopardy theme
-* The site should have animated elements
-* Make the site fully mobile responsive
+- When you first visit the homepage, it should play the Jeopardy theme
+- The site should have animated elements
+- Make the site fully mobile responsive
 
 ---
 
 # Jeopardy Game
 
-Jeopardy! The great American quiz show has been a staple of network television since the 60s.  In this project we will be creating our own Jeopardy games that will run in the browser using the awesome powers of HTML, CSS, and JavaScript!
+Jeopardy! The great American quiz show has been a staple of network television since the 60s. In this project we will be creating our own Jeopardy games that will run in the browser using the awesome powers of HTML, CSS, and JavaScript!
 
 The game of Jeopardy consists of several players that compete to earn points by selecting questions of varying points values from a board. The board is a 6 X 6 square with each column representing a category, and the first row containing the titles of each category, and every row after being increasingly difficult questions (with correspondingly higher point values) for their categories
 
@@ -164,9 +167,9 @@ If you don't want to have to come up with 61 individual questions you can use a 
 
 **And** the notification area changes to player 2's turn
 
-**And** the question timer resets*
+**And** the question timer resets\*
 
-> *You should assume from here on out that any time a new question is chosen, or the player changes the question timer should reset
+> \*You should assume from here on out that any time a new question is chosen, or the player changes the question timer should reset
 
 ## Answer a Question Correctly
 

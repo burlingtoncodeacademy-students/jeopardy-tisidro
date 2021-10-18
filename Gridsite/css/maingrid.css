@@ -1,10 +1,11 @@
 /* ------------------Home Page css---------------------- */
-/* PROBLEM: MOBILE VIEW KNOCKS CENTER CONTAINER OUT AND ENDS UP PUSHING NEXT BUTTON OFF SCREEN ON ALL PAGES (need to look at code, and need help with media queries), also ANIMATION MAKES CONTENT POP OUT OF THE BORDER AREA, BUTTON HOVER NOT WORKING*/
+/* PROBLEM: I am not understanding how to center grid items*/
 
 /*the body is given a margin of zero to eliminate any margins, and a black background color so entire page appears black*/
 body {
-  display: flex; /*creates a flex container in the body element*/
-  justify-content: center; /*centers content in a flex container*/
+  display: grid;
+  grid-template-columns: 1fr;
+
   border: 10px rgb(166, 137, 180) solid;
   border-radius: 6px; /*rounds the edges of the border so they are not sharp*/
   max-width: 80vw; /*sets a max view width on viewer's screen similarly to percent, responsive*/
@@ -14,20 +15,24 @@ body {
 
 /* a container holding the page elements*/
 #containerblue {
-  display: flex;
-  flex-direction: column; /*sets the flex direction to column - it would be row by default. widths and heights will apply to the column as the main axis is horizontal for column flex direction*/
-  justify-content: stretch;
-  align-items: center;
-  flex: 1; /*allows container tag to take up entire container width*/
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-self: center;
   margin: 0; /*no margin around the container*/
   max-width: 80vw; /*sets height and width to specified view width*/
-  height: 40vw;
   background-color: navy;
   padding: 5px;
 }
 
+#bodycenter {
+  display: grid;
+  grid-column: 2-4;
+  justify-content: center;
+}
+
 /*Gives the h1 content font properties and some padding*/
 h1 {
+  width: 90vw;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(212, 42, 228);
@@ -36,7 +41,6 @@ h1 {
 
 /*css to set  wrap image in a background color of aqua and box shadow and set animation timing*/
 #homeimg {
-  text-align: center;
   width: 30vw;
   margin-bottom: 15px;
   background-color: aqua;
@@ -62,13 +66,13 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center; /*centers the content in the flex container*/
-  max-width: 20vw;
   padding-bottom: 15px;
 }
 
 /*id that targets properties of the button*/
 #button {
-  height: 30px;
+  height: 6vh;
+  width: 10vw;
   padding: 4px;
   border-radius: 10px; /*rounds button edges*/
   background-color: rgb(243, 49, 178);

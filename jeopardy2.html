@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="container1">
+  <div id="containergameboard">
 
     <h1>Round 2: Double Javascript Jeopardy!</h1>
 
@@ -73,7 +73,7 @@
 
 
       <div>
-        <h2 class="gametitle">Classes and Constructors</h2>
+        <h2 class="gametitle">Classes</h2>
 
         <h3>$200</h3>
         <h3>$400</h3>
@@ -83,11 +83,24 @@
       </div>
     </div>
 
-    <div id=button>
 
-      <button type="button" id="button"><a href="/final-jeopardy.html">Go to Final Jeopardy!</a></button>
+    <div id="questionbox">
+      <div id="form">
+        Type your question here:
+        <form><input type=textarea id="resize" max-length="30" placeholder="What is..."></input></form>
+      </div>
 
-    </div>
+      <div id="questionbutton">
+
+        <button type="button" id="qbuttonstyle"><a href="">Guess</a></button>
+
+        <button type="button" id="qbuttonstyle"><a href="">Pass</a></button>
+
+      </div>
+
+      <div id="button">
+
+        <button type="button" id="button"><a href="/jeopardyfinal.html">Go to Final Jeopardy!</a></button>
 </body>
 
 </html>

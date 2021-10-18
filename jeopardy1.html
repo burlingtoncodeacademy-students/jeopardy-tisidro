@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="container1">
+    <div id="containergameboard">
 
         <h1>Round 1: Javascript Jeopardy!</h1>
 
@@ -82,11 +82,23 @@
             </div>
         </div>
 
-        <div id=button>
+        <div id="questionbox">
+            <div id="form">
+                Type your question here:
+                <form><input type=textarea id="resize" max-length="30" placeholder="What is..."></input></form>
+            </div>
 
-            <button type="button" id="button"><a href="/round-2.html">Go to Round 2!</a></button>
+            <div id="questionbutton">
 
-        </div>
+                <button type="button" id="qbuttonstyle"><a href="">Guess</a></button>
+
+                <button type="button" id="qbuttonstyle"><a href="">Pass</a></button>
+
+            </div>
+
+            <div id="button">
+
+                <button type="button" id="button"><a href="/jeopardy2.html">Go to Round 2!</a></button>
 </body>
 
 </html>
