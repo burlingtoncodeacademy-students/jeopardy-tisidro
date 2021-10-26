@@ -27,32 +27,30 @@
       </div>
     </div>
 
-
+    <!-- This final bet box div takes care of the css for the form containing the amount the player wants to bet and the button to submit that bet -->
     <div id="finalbetbox">
       <div id="finalformbox">
         <div id="form">
-
+          <!-- the form for submitting the answer, which contains a text area to later grab that input and manipulate it -->
           <form><textarea id="resize" max-length="30" placeholder="Answer"></textarea></form>
         </div>
         <div id="form">
-
+          <!-- the form for submitting the amount, which contains a text area to later grab that input and manipulate it -->
           <form><textarea id="resize" max-length="30" placeholder="Amount"></textarea></form>
         </div>
       </div>
       <div id="questionbutton">
 
-        <button type="button" id="betbuttonstyle"><a href="">Place your bet!</a></button>
+        <button type="button" disabled id="betbuttonstyle" id="finalAnswer"><a href="">Place your bet!</a></button>
       </div>
-
-
     </div>
+    <!-- div for player scores -->
     <div id="scores">
       <div id="player1">player 1 score</div>
       <div id="player1">player 2 score</div>
-
     </div>
     <div id="button">
-
+      <!-- play again button takes player back to home page so they can restart the game -->
       <button type="button" id="button"><a href="/index.html">Play again</a></button>
     </div>
 </body>

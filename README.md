@@ -1,3 +1,5 @@
+Essential Problems 10/22/21: can't get hash on URL, can't get player notification up, need to connect question objects to items in categories.
+
 /_-----------NOTE from Terri: I created a grid version named indexgrid.html to practice my css grid skills. The index.html is made with flexbox. I plan to make pages for 1,2, and final jeopardy in grid as well to keep developing my skills so I know both! :) ---------_/
 
 # Jeopardy Board

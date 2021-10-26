@@ -18,7 +18,7 @@
       <div>
         <!-- generates columns -->
 
-        <h2 class="gametitle">User Input</h2>
+        <h2 class="gametitle">Category 1</h2>
 
         <!-- all things I want in my column will go here! -->
         <h3>$200</h3>
@@ -29,7 +29,7 @@
       </div>
 
       <div>
-        <h2 class="gametitle">Git and Github</h2>
+        <h2 class="gametitle">Category 2</h2>
         <!-- generates columns -->
 
         <!-- all things I want in my column will go here! -->
@@ -41,7 +41,7 @@
       </div>
 
       <div>
-        <h2 class="gametitle">Loops</h2>
+        <h2 class="gametitle">Category 3</h2>
 
         <h3>$200</h3>
         <h3>$400</h3>
@@ -52,7 +52,7 @@
 
 
       <div>
-        <h2 class="gametitle">Arrays</h2>
+        <h2 class="gametitle">Category 4</h2>
 
         <h3>$200</h3>
         <h3>$400</h3>
@@ -62,7 +62,7 @@
       </div>
 
       <div>
-        <h2 class="gametitle">Objects</h2>
+        <h2 class="gametitle">Category 5</h2>
 
         <h3>$200</h3>
         <h3>$400</h3>
@@ -73,7 +73,7 @@
 
 
       <div>
-        <h2 class="gametitle">Classes</h2>
+        <h2 class="gametitle">Category 6</h2>
 
         <h3>$200</h3>
         <h3>$400</h3>
@@ -83,24 +83,46 @@
       </div>
     </div>
 
+    <!-- box to show player1 notifications and score -->
+    <div id="player1box">
 
+      <form id="player1Score">Player 1 score:</form>
+
+      <form id="player1Turn">Player 1 Turn:</form>
+
+    </div>
+    <div id="timer">
+      Timer:
+    </div>
+
+    <!-- form  for user to input their answer, has an input text area in the form so I can grab that input later to compare to the actual answer. -->
     <div id="questionbox">
       <div id="form">
         Type your question here:
         <form><input type=textarea id="resize" max-length="30" placeholder="What is..."></input></form>
       </div>
-
+      <!-- Button for user to submit their answer (guess) or if they have no clue they can pass and take another try on a different item in the game board! -->
       <div id="questionbutton">
 
-        <button type="button" id="qbuttonstyle"><a href="">Guess</a></button>
+        <button type="button" id="qbuttonstyle" id="guessButton"><a href="">Guess</a></button>
 
-        <button type="button" id="qbuttonstyle"><a href="">Pass</a></button>
+        <button type="button" id="qbuttonstyle" id="passButton"><a href="">Pass</a></button>
 
       </div>
+    </div>
 
-      <div id="button">
+    <!-- box to show player2 notifications and score -->
+    <div id="player2box">
 
-        <button type="button" id="button"><a href="/jeopardyfinal.html">Go to Final Jeopardy!</a></button>
+      <form id="player2Score">Player 2 score:</form>
+
+      <form id="player2Turn">Player 2 Turn:</form>
+
+    </div>
+    <div id="button">
+
+      <button type="button" id="button"><a href="/jeopardyfinal.html">Go to Final Jeopardy!</a></button>
+      <script src="scripts/main.js"></script>
 </body>
 
 </html>
