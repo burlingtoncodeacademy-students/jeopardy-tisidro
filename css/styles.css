@@ -2,6 +2,7 @@ body,
 html {
   max-height: 100%;
 }
+/*id that targets display properties of the button*/
 
 button {
   height: 30px;
@@ -12,11 +13,12 @@ button {
   font-weight: bold;
   font-size: small;
 }
-
+/*button hover is not working! I want to get help to fix this*/
 button:hover {
   background: rgba(136, 43, 136, 0.993);
 }
 
+/* gives body a grey background and yellow text also sets the font size */
 body {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -25,6 +27,8 @@ body {
   font-weight: bold;
   background-color: rgba(74, 67, 124, 0.993);
 }
+
+/* styles the layout for the page level game heading */
 .game-header {
   display: flex;
   justify-content: space-between;
@@ -33,24 +37,27 @@ body {
   padding: 0em;
 }
 
+/* div to hold timer and scores */
 #timer-scores {
   display: flex;
   justify-content: space-between;
   padding: 0em;
-  color: white;
 }
 
+/* styling for timer  */
 #timer {
   display: flex;
   align-items: center;
   margin: 0em;
 }
 
+/* styling for scores  */
 #score {
   display: flex;
   align-items: center;
 }
 
+/* positioning game board contents */
 .game-board {
   display: flex;
   justify-content: space-around;
@@ -58,6 +65,7 @@ body {
   margin-bottom: 1em;
 }
 
+/* styling for category titles */
 .category-title {
   display: flex;
   align-items: center;
@@ -71,17 +79,20 @@ body {
   text-align: center;
 }
 
+/* makes columns  */
 .game-board .column {
   flex: 1;
   margin-left: 0.1em;
   margin-right: 0.1em;
 }
 
+/* makes rows and so they appear across and roll over */
 .row {
   flex-basis: 100%;
   margin-top: 0em;
 }
 
+/* styling for column and game-board contents */
 .game-board .column {
   display: flex;
   align-items: center;
@@ -94,10 +105,9 @@ body {
   text-align: center;
 }
 
+/* styling for game modal (hidden) --still working on this */
 .game-modal {
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
   left: 0;
   right: 0;
   top: 0;
@@ -110,7 +120,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* css to show game modal */
 .game-modal .visible {
   opacity: 1;
-  pointer-events: initial;
 }
