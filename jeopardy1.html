@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Jeopardy Round One!</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="gamecolumns">
 
                 <!-- categories styled by this class -->
-                <h2 class="gametitle">Category 1</h2>
+                <h2 class="gametitle" id="col1">Category 1</h2>
 
                 <!-- questions by prize $ in column form below each category, each question has a unique Id to use later for calling individual cells -->
                 <h3 class="question" id="Q1a">$100</h3>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="gamecolumns">
-                <h2 class="gametitle">Category 3</h2>
+                <h2 class="gametitle"> Category 3</h2>
 
                 <h3 class="question" id="Q3a">$100</h3>
                 <h3 class="question" id="Q3b">$200</h3>
@@ -58,7 +58,7 @@
 
 
             <div class="gamecolumns">
-                <h2 class="gametitle">Category 4</h2>
+                <h2 class="gametitle"> Category 4</h2>
 
                 <h3 class="question" id="Q4a">$100</h3>
                 <h3 class="question" id="Q4b">$200</h3>
@@ -114,8 +114,8 @@
             <!-- Buttons for user to submit their answer (guess) or if they have no clue they can pass and take another try on a different item in the game board. -->
             <div id="questionbutton">
 
-                <button type="button" class="qbuttonstyle" id="guessButton">Guess</button>
-                <button type="button" class="qbuttonstyle" id="passButton">Pass</button>
+                <button type="button" id="guessButton">Guess</button>
+                <button type="button" id="passButton">Pass</button>
 
             </div>
 
@@ -123,7 +123,7 @@
 
         <!-- Button to navigate to Round 2 of the game -->
         <div id="button">
-            <button type="button" id="button"><a href="/jeopardy2.html">Go to Round 2!</a></button>
+            <button type="button" id="button"><a href="jeopardy2.html">Go to Round 2!</a></button>
             <!-- The all-important script file--with correct path and spelling! :) :) -->
             <script src="scripts/main.js"></script>
 </body>

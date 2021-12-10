@@ -1,0 +1,116 @@
+body,
+html {
+  max-height: 100%;
+}
+
+button {
+  height: 30px;
+  padding: 4px;
+  border-radius: 10px; /*rounds button edges*/
+  background: yellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: small;
+}
+
+button:hover {
+  background: rgba(136, 43, 136, 0.993);
+}
+
+body {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: yellow;
+  font-size: 1.5vw;
+  font-weight: bold;
+  background-color: rgba(74, 67, 124, 0.993);
+}
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding: 0em;
+}
+
+#timer-scores {
+  display: flex;
+  justify-content: space-between;
+  padding: 0em;
+  color: white;
+}
+
+#timer {
+  display: flex;
+  align-items: center;
+  margin: 0em;
+}
+
+#score {
+  display: flex;
+  align-items: center;
+}
+
+.game-board {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4em;
+  margin-right: 0.4em;
+  flex: 1;
+  height: 3em;
+  background-color: darkblue;
+  color: yellow;
+  text-align: center;
+}
+
+.game-board .column {
+  flex: 1;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+.row {
+  flex-basis: 100%;
+  margin-top: 0em;
+}
+
+.game-board .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4em;
+  margin-right: 0.4em;
+  height: 3em;
+  background-color: darkblue;
+  color: yellow;
+  text-align: center;
+}
+
+.game-modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: darkblue;
+  position: fixed;
+  font-size: 2vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-modal .visible {
+  opacity: 1;
+  pointer-events: initial;
+}
