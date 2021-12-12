@@ -5,7 +5,6 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-
   border: 10px rgb(166, 137, 180) solid;
   border-radius: 6px; /*rounds the edges of the border so they are not sharp*/
   max-width: 80vw; /*sets a max view width on viewer's screen similarly to percent, responsive*/

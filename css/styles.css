@@ -105,23 +105,52 @@ body {
   text-align: center;
 }
 
-/* styling for game modal (hidden) --still working on this */
-.game-modal {
-  opacity: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: darkblue;
-  position: fixed;
-  font-size: 2vw;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.modalButton {
+  background: rgba(136, 43, 136, 0.993);
+  padding: 1em 2em;
+  color: white;
+  border: 9;
+  border-radius: 20px;
 }
 
-/* css to show game modal */
-.game-modal .visible {
-  opacity: 1;
+/* styles the modal window */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /*order of elements (the higher the number the more to the front this element is) */
+  left: 0; /* setting position of modal to left top */
+  top: 0;
+  height: 100%; /*making modal take up whole window*/
+  width: 100%;
+  overflow: auto; /*enables scroll bar if it's necessary*/
+  background-color: rgba(
+    74,
+    67,
+    124,
+    0.9
+  ); /*making background dark, but with some transparency --last value sets that*/
+}
+
+/* styles the content in the modal*/
+.modal-body {
+  background-color: rgba(202, 139, 202, 0.993);
+  /* margin: 20% auto; adds 20% margin to top and bottom, centers left and right with auto */
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 5px 8px 0 rgba(136, 43, 136, 0.2),
+    0 7px 20px 0 rgba(136, 43, 136, 0.15);
+}
+
+/* styles the "x" to close the modal to go to the right top corner */
+.closeModal {
+  color: darkslategray;
+  float: right;
+  font-size: 30px;
+}
+
+.closeModal:hover,
+close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -69,11 +69,29 @@
         </div>
         </div>
 
+        <button id="openModal">Open Modal</button>
 
+        <div <button type="button" id="button"><a href="jeopardy2.html">Go to Jeopardy Round 2!</a></button>
 
-        <button type="button" id="button"><a href="jeopardy2.html">Go to Jeopardy Round 2!</a></button>
+            <div id="gameModal" class="modal">
+                <div class="modal-body">
+                    <!-- "x" symbol to close modal -->
+                    <span class="closeModal">&times;</span>
+                    <div id="form">
+                        <!-- Form  with input field for user to enter text input from player -->
+                        Type your question here:
+                        <form><input type=textarea id="resize" max-length="30" placeholder="What is..."></input></form>
+                    </div>
+                    <!-- Buttons for user to submit their answer (guess) or if they have no clue they can pass and take another try on a different item in the game board. -->
+                    <div id="questionbutton">
 
-        <script src="scripts/index.js"></script>
+                        <button type="button" id="guessButton">Guess</button>
+                        <button type="button" id="passButton">Pass</button>
+                    </div>
+                </div>
+            </div>
+            <script src="scripts/index.js">
+            </script>
     </body>
 
 </html>

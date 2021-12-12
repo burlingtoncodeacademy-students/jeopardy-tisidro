@@ -12,6 +12,22 @@ let passButton = document.getElementById('passButton')
 guessButton.style.pointerEvents = 'none'
 passButton.style.pointerEvents = 'none'
 
+//-------------Open Modal With Question When Game Cell is Clicked-------//
+//modal variable
+let modal = document.getElementById('modal')
+//open modal button variable
+let modalButton = document.getElementById('openModal')
+let closeModal = document.getElementById('closeModal')
+
+//event listener
+modalButton.addEventListener('click', modalOpener)
+
+//function that opens the modal
+function modalOpener () {
+  console.log('hi modal is clicked')
+  //modal.style.display = 'block'
+}
+
 //-------Array from the questionBlock variable--------------------//
 //getting array from gameQuestion which is a collection, and iterate over it with forEach method to address each element in array
 Array.from(questionBlock).forEach(element => {
@@ -75,10 +91,6 @@ function countdownTimer () {
     //decreases the interval by 1
   })
 }
-
-//-----------------------------STILL NEED TO COMPLETE THESE STORIES--------------------------------//
-
-//3. Question timer resets (any time new question is chosen or player changes...the question timer should reset)
 
 //----STORY 5: ANSWER QUESTION CORRECTLY------//
 //Given question is chosen, when user Submits Answer AND answer is correct...THEN game awards player amount of points on the card AND card is removed from board AND player does not change
