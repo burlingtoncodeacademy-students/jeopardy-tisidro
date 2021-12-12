@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeopardy</title>
+  <!-- link to stylesheet --css won't work without it! must be careful to use correct path in href, css/images/audio are all in their own sub-folders-->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
-  <h1>Welcome to Jeopardy!</h1>
+  <!-- container for intro page content to give it a color/center it -->
+  <div id="containerblue">
+    <h1>Welcome to Javascript Jeopardy!</h1>
+    <!-- home page image with alt and title tags -->
+    <img id="homeimg" alt="A Jeopardy game logo." title="Welcome to Javascript Jeopardy!" src="images/jeohome.jpg" />
+    <!-- link to audio source file and controls parameter gives user ability to turn off the music (thankfully) -->
+    <div id="audio">
+      <audio src="media/jeopardy-theme-song.mp3" controls></audio>
+    </div>
+    <!-- html code for button to click and start game. this is essentially the site navigation as each page has a linear progression to the next via this button. I could also add a "back to start" or quit button easily but want to encourage them to play :)I have also added a #2-player-game to the href to create a fragment that will show on the round 1 page when they navigate to that page -->
+    <div id="button">
+
+      <button type="button" id="button"><a href="jeopardy1.html">Start Game!</a></button>
+    </div>
+
+  </div>
 </body>
+
+
 </html>

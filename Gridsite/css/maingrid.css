@@ -1,0 +1,251 @@
+/* ------------------Home Page css---------------------- */
+/* PROBLEM: I am not understanding how to center grid items*/
+
+/*the body is given a margin of zero to eliminate any margins, and a black background color so entire page appears black*/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 10px rgb(166, 137, 180) solid;
+  border-radius: 6px; /*rounds the edges of the border so they are not sharp*/
+  max-width: 80vw; /*sets a max view width on viewer's screen similarly to percent, responsive*/
+  padding: 10px; /*padding around body element*/
+  background-color: black;
+}
+
+/* a container holding the page elements*/
+#containerblue {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-self: center;
+  margin: 0; /*no margin around the container*/
+  max-width: 80vw; /*sets height and width to specified view width*/
+  background-color: navy;
+  padding: 5px;
+}
+
+#bodycenter {
+  display: grid;
+  grid-column: 2-4;
+  justify-content: center;
+}
+
+/*Gives the h1 content font properties and some padding*/
+h1 {
+  width: 90vw;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(212, 42, 228);
+  padding-bottom: 20px;
+}
+
+/*css to set  wrap image in a background color of aqua and box shadow and set animation timing*/
+#homeimg {
+  width: 30vw;
+  margin-bottom: 15px;
+  background-color: aqua;
+  box-shadow: 0.5vw 1vh; /*controlling view width and height of box shadow*/
+  padding: 3vh 5vw 2vh 5vw; /*top, left, bottom, right padding*/
+  transition: all 0.5s ease; /*what is being targeted, time, animation timing-accelerates*/
+  transition-property: width, background-color; /*properties that will transition with the action (pseudoclass/id)*/
+}
+/*--home page image hover animation that causes image to grow and background color to change to pink when user hovers over it then it returns to normal when they are no longer hovering--*/
+#homeimg:hover {
+  width: 40vw; /*original width was 35, this makes it pop out 5vw with hover*/
+  background-color: rgb(
+    243,
+    49,
+    178
+  ); /*color that background will change to with hover*/
+  transition-property: width, background-color; /*properties that will transition with the action (pseudoclass/id)*/
+  transition: all 0.5s ease; /*what is being targeted, time, animation timing-accelerates*/
+}
+/*--------Button and Audio styling css--------*/
+/*places audio content in a flex container oriented as a column with the content centered and max of 20 view widths with a small bottom padding to give space for the button*/
+#audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*centers the content in the flex container*/
+  padding-bottom: 15px;
+}
+
+/*id that targets properties of the button*/
+#button {
+  height: 6vh;
+  width: 10vw;
+  padding: 4px;
+  border-radius: 10px; /*rounds button edges*/
+  background-color: rgb(243, 49, 178);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: black;
+}
+
+/*button hover is not working! I want to get help to fix this*/
+button:hover {
+  background-color: purple;
+}
+
+/*-----Media Queries----*/
+@media screen and (min-width: 451px) and (max-width: 800px) {
+}
+
+/* -----------------Round1 css--------------------- */
+
+/* ---Game board layout---*/
+#containergameboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  flex: 1;
+  margin: 0;
+  max-width: 80vw;
+  background-color: navy;
+  padding: 5px;
+}
+
+#board {
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  max-width: 80vw;
+  max-height: 80vw;
+  background-color: rgb(223, 20, 230);
+  padding-bottom: 20px;
+  border: white 5px solid;
+  border-radius: 1em;
+}
+
+.gametitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: bold;
+  width: 20vh;
+  height: auto;
+  color: white;
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20vh;
+  height: auto;
+  color: white;
+}
+
+#questionbox {
+  /*this question box has a form field for users to enter their question and under it a button for user to guess or pass */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50vw;
+  height: auto;
+  margin: 50px;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background-color: rgb(82, 194, 223);
+  border: white 5px solid;
+  border-radius: 1em;
+}
+
+#resize {
+  resize: none;
+}
+
+#questionbutton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 10vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#qbuttonstyle {
+  background-color: pink;
+}
+
+/* ---------------Final-jeopardy css----------------- */
+
+#finalboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  background-color: navy;
+  padding: 5px;
+}
+
+#finalgame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40vw;
+  background-color: rgb(223, 20, 230);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: white;
+  border: white 2px solid;
+  border-radius: 1em;
+}
+
+#finaltitle {
+  font-size: 20px;
+}
+
+#finalquestion {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#finalbetbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(82, 194, 223);
+  border: white 5px solid;
+  border-radius: 1em;
+}
+
+#finalformbox {
+  padding: 10px;
+}
+
+#betbuttonstyle {
+  display: flex;
+  padding: 10px;
+  background-color: goldenrod;
+  border-radius: 1em;
+}
+
+#scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+}

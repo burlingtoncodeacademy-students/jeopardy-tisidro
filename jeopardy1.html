@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Jeopardy Round One!</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- container for game board -->
+    <div id="containergameboard">
+
+        <h1>Round 1: Javascript Jeopardy!</h1>
+
+        <!-- divs that hold the text content for the game timer and the player's turn -->
+        <div id="gameTimer">
+            Timer:
+        </div>
+        <h2 id="playerTurn">Player 1 it's your turn!</h2>
+
+        <div id="board">
+            <!-- generates columns -->
+            <div class="gamecolumns">
+
+                <!-- categories styled by this class -->
+                <h2 class="gametitle" id="col1">Category 1</h2>
+
+                <!-- questions by prize $ in column form below each category, each question has a unique Id to use later for calling individual cells -->
+                <h3 class="question" id="Q1a">$100</h3>
+                <h3 class="question" id="Q1b">$200</h3>
+                <h3 class="question" id="Q1c">$300</h3>
+                <h3 class="question" id="Q1d">$400</h3>
+                <h3 class="question" id="Q1e">$500</h3>
+            </div>
+
+            <div class="gamecolumns">
+                <h2 class="gametitle">Category 2</h2>
+
+                <h3 class="question" id="Q2a">$100</h3>
+                <h3 class="question" id="Q2b">$200</h3>
+                <h3 class="question" id="Q2c">$300</h3>
+                <h3 class="question" id="Q2d">$400</h3>
+                <h3 class="question" id="Q2e">$500</h3>
+            </div>
+
+            <div class="gamecolumns">
+                <h2 class="gametitle"> Category 3</h2>
+
+                <h3 class="question" id="Q3a">$100</h3>
+                <h3 class="question" id="Q3b">$200</h3>
+                <h3 class="question" id="Q3c">$300</h3>
+                <h3 class="question" id="Q3d">$400</h3>
+                <h3 class="question" id="Q3e">$500</h3>
+            </div>
+
+
+            <div class="gamecolumns">
+                <h2 class="gametitle"> Category 4</h2>
+
+                <h3 class="question" id="Q4a">$100</h3>
+                <h3 class="question" id="Q4b">$200</h3>
+                <h3 class="question" id="Q4c">$300</h3>
+                <h3 class="question" id="Q4d">$400</h3>
+                <h3 class="question" id="Q4ae">$500</h3>
+            </div>
+
+            <div class="gamecolumns">
+                <h2 class="gametitle">Category 5</h2>
+
+                <h3 class="question" id="Q5a">$100</h3>
+                <h3 class="question" id="Q5b">$200</h3>
+                <h3 class="question" id="Q5c">$300</h3>
+                <h3 class="question" id="Q5d">$400</h3>
+                <h3 class="question" id="Q5e">$500</h3>
+            </div>
+
+
+            <div class="gamecolumns">
+                <h2 class="gametitle">Category 6</h2>
+
+                <h3 class="question" id="Q6a">$100</class=>
+                    <h3 class="question" id="Q6b">$200</class=>
+                        <h3 class="question" id="Q6c">$300</class=>
+                            <h3 class="question" id="Q6d">$400</class=>
+                                <h3 class="question" id="Q6e">$500</class=>
+            </div>
+        </div>
+
+        <!-- Container with player score content -->
+        <div id="scores">
+            <!-- Div for text block to show player1 score -->
+            <div id="player1box">
+                <div id="player1Score">Player 1 Score: </div>
+            </div>
+            <!-- Form  for user to input their answer, has an input text area in the form so I can grab that input later to compare to the actual answer. -->
+
+            <!-- Div for text block to show player2 score -->
+            <div id="player2box">
+
+                <div id="player2Score">Player 2 score:</div>
+            </div>
+        </div>
+        <!-- Container to hold the form and guess/pass buttons -->
+        <div id="questionbox">
+            <!-- container for form and user input content -->
+            <div id="form">
+                <!-- Form  with input field for user to enter text input from player -->
+                Type your question here:
+                <form><input type=textarea id="resize" max-length="30" placeholder="What is..."></input></form>
+            </div>
+            <!-- Buttons for user to submit their answer (guess) or if they have no clue they can pass and take another try on a different item in the game board. -->
+            <div id="questionbutton">
+
+                <button type="button" id="guessButton">Guess</button>
+                <button type="button" id="passButton">Pass</button>
+
+            </div>
+
+        </div>
+
+        <!-- Button to navigate to Round 2 of the game -->
+        <div id="button">
+            <button type="button" id="button"><a href="jeopardy2.html">Go to Round 2!</a></button>
+            <!-- The all-important script file--with correct path and spelling! :) :) -->
+            <script src="scripts/main.js"></script>
+</body>
+
+</html>
